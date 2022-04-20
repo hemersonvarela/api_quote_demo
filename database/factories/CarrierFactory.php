@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends Factory
  */
-class QuoteFactory extends Factory
+class CarrierFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,9 @@ class QuoteFactory extends Factory
     public function definition(): array
     {
         return [
-            'quote_id' => $this->faker->randomNumber(5, true),
-            'is_valid' => true,
+            'name' => $this->faker->word(),
+            'logo' => $this->faker->image(),
+            'is_active' => true,
         ];
     }
 }
