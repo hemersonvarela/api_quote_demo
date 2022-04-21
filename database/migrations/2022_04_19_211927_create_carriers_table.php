@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('carriers', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
-            $table->string('logo', 100);
+            $table->string('logo', 100)->nullable(true);
             $table->boolean('is_active')->default(Carrier::IS_ACTIVE);
             $table->softDeletes();
         });

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('owner', 255);
             $table->string('account_number', 255);
-            $table->text('description');
+            $table->text('description')->nullable(true);
             $table->softDeletes();
         });
     }
