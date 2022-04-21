@@ -25,7 +25,7 @@ cp .env.example .env
 
 if you have a db server running over port `3306` add below parameter to the `.env` file 
 ```sh
-FORWARD_DB_PORT:3367
+FORWARD_DB_PORT=3367
 ```
 Set a bash alias for sail
 ```sh
