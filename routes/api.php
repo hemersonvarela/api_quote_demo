@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\QuoteController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\QuoteDetailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
     Route::resource('quote', QuoteController::class);
+    Route::resource('quoteDetail', QuoteDetailController::class);
 });
