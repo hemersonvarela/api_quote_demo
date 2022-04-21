@@ -28,4 +28,15 @@ class QuoteControllerTest extends TestCase
         $response->assertStatus(200);
     }
 
+    /**
+     * A basic feature test example.
+     *
+     * @return void
+     */
+    public function test_get_quote_detail_endpoint()
+    {
+        $response = $this->get('/api/v1/quoteDetail');
+        $response->assertStatus(200);
+    }
+
 }
