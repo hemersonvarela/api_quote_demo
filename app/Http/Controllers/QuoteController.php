@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\QuoteRequest;
 use App\Http\Resources\QuoteResource;
 use App\Services\AccufRATEService;
 use Illuminate\Http\Request;
@@ -11,10 +10,10 @@ class QuoteController extends Controller
 {
     /**
      * Display a listing of the quote resource.
-     * @param QuoteRequest $request
+     * @param Request $request
      * @return QuoteResource
      */
-    public function index(QuoteRequest $request)
+    public function index(Request $request)
     {
         $quote = AccufRATEService::getQuote($request);
         $quote->load('quoteDetails');
