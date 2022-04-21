@@ -18,7 +18,7 @@ class CarrierFactory extends Factory
     {
         return [
             'name' => $this->faker->word(),
-            'logo' => $this->faker->image(),
+            'logo' => $this->faker->optional()->image(),
             'is_active' => true,
         ];
     }

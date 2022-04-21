@@ -19,7 +19,7 @@ class TariffFactory extends Factory
         return [
             'owner' => $this->faker->name,
             'account_number' => $this->faker->numerify('acc-####'),
-            'description' => $this->faker->text(),
+            'description' => $this->faker->optional()->text(),
         ];
     }
 }
