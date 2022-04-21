@@ -23,7 +23,7 @@ Setup app configuration
 cp .env.example .env
 ```
 
-if you have a db server running over port `3306` add below parameter to the .env file 
+if you have a db server running over port `3306` add below parameter to the `.env` file 
 ```sh
 FORWARD_DB_PORT:3367
 ```
@@ -52,18 +52,7 @@ Run database seeders
 sail artisan db:seed
 ```
 
-Install NPM dependencies
-```sh
-sail npm install
-```
-
-Build assets:
-
-```sh
-sail npm run dev
-```
-
 Open URL in your browser
 ```sh
-http://laravel.test.localhost/
+http://api_qoute_demo.localhost/api/v1/quote
 ```
