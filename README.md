@@ -52,6 +52,11 @@ Run database seeders
 sail artisan db:seed
 ```
 
+Run unit test
+```sh
+sail artisan test
+```
+
 Open URL in your browser
 ```sh
 http://api_qoute_demo.localhost/api/v1/quote
