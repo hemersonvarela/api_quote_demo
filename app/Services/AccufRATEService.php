@@ -23,7 +23,9 @@ class AccufRATEService
     static function getSOAPResponse($request)
     {
         // call ACCUFRATE SOAP endpoint
-        $soapResponse = Http::get(env('ACCUFRATE_SERVICE_GET_QUOTE'));
+        $soapResponse = Http::get(
+            env('ACCUFRATE_SERVICE_GET_QUOTE')
+        );
 
         // clean soap response
         $xml = strtr(
